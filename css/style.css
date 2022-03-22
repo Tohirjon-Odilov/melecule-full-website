@@ -606,6 +606,11 @@ hr {
     height: 90%;
     width: 90%;
   }
+  .s1 .logo p {
+    margin-top: 20px;
+    line-height: 1px;
+    font-size: 10px;
+  }
 }
 
 .s2 {
