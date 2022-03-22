@@ -600,7 +600,7 @@ hr {
     font-size: 12px;
   }
   .main__content div p {
-    font-size: 11px;
+    font-size: 8.5px;
   }
   #main__img {
     height: 90%;
@@ -620,7 +620,6 @@ hr {
 .s2 .s2_container {
   width: 100%;
   height: 100vh;
-  overflow: hidden;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -632,7 +631,20 @@ hr {
       justify-self: center;
 }
 
+.s2 .s2_container div img {
+  width: 100%;
+  height: 100%;
+}
+
+.s2 .s2_container .right {
+  margin-left: 50px;
+  margin-top: 30px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
 .s2 .s2_container .right .f-btn {
+  margin-bottom: 20px;
   padding: 0 26px;
   background: rgba(255, 193, 71, 0.6);
   border: 2px solid #FFC147;
@@ -653,24 +665,33 @@ hr {
 }
 
 .s2 .s2_container .right p {
+  margin-top: 20px;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  /* or 150% */
   color: #1E313B;
 }
 
+.s2 .s2_container .right .card1 .header {
+  color: #FFC147;
+}
+
+.s2 .s2_container .right .card1 .header img {
+  width: 24px;
+  height: 24px;
+}
+
 @media screen and (max-width: 768px) {
-  .s2_container {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
+  .s2 .s2_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
