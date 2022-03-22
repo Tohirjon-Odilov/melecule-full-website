@@ -206,27 +206,32 @@
     .navbar_menu {
         display: grid;
         grid-template-columns: auto;
+        width: 10px;
+        height: 10px;
         margin: 0;
-        width: 100%;
+        padding: 0;
         position: absolute;
+        top: 30px;
+        left: 355px;
         opacity: 0;
-        transition: all 0.5s ease;
-        height: 50vh;
         z-index: -1;
         background: #fff;
-        left: 0px;
         font-size: 0.1rem;
-        top: 100%;
-        height: 65vh;
+        border-radius: 100%;
+        transition: all 0.3s ease;
     }
     .navbar_menu.active {
+        width: 100%;
         margin: 0;
+        left: 0;
         top: 100%;
+        border-radius: 0%;
         opacity: 1;
         transition: all 0.5s ease;
         z-index: 99;
         height: 65vh;
         font-size: 1.6rem;
+        // left: 0;
     }
     #navbar_logo {
         align-items: center;
@@ -288,6 +293,7 @@
 }
 
 .main__container {
+    z-index: 999;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -458,6 +464,7 @@ hr {
     .main__content {
         text-align: center;
         margin-bottom: 0;
+        margin-top: -50px;
         h2 {
             font-size: 2.5rem;
         }
@@ -484,6 +491,7 @@ hr {
     }
     .main__img--container {
         margin-left: -50px;
+        margin-top: -120px;
     }
 }
 
@@ -537,7 +545,7 @@ hr {
     background: #fff;
     .s2_container {
         width: 100%;
-        height: 100vh;
+        height: 626px;
         // overflow: hidden;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -577,12 +585,41 @@ hr {
                 line-height: 24px;
                 color: #1E313B;
             }
-            .card1 {
-                .header {
-                    color: #FFC147;
-                    img {
-                        width: 24px;
-                        height: 24px;
+            .group {
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 50px;
+                .card1 {
+                    .header {
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 24px;
+                        /* identical to box height, or 133% */
+                        color: #FFC147;
+                        img {
+                            margin-right: 20px;
+                            width: 24px;
+                            height: 24px;
+                        }
+                    }
+                    p {
+                        margin-top: 5px;
+                        margin-left: 45px;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 21px;
+                        /* or 150% */
+                        color: #1E313B;
+                    }
+                    &:nth-child(1) {
+                        margin-bottom: 20px;
+                    }
+                    &:nth-child(2) {
+                        margin-left: 70px;
+                        margin-bottom: 20px;
+                    }
+                    &:nth-child(4) {
+                        margin-left: 50px;
                     }
                 }
             }
@@ -590,13 +627,43 @@ hr {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
     .s2 {
         .s2_container {
             display: flex;
             flex-wrap: wrap;
             align-items: center;
             justify-self: center;
+        }
+    }
+}
+
+@media screen and (max-width:480px) {
+    .s2 {
+        .s2_container {
+            height: 1000px;
+            .pic {
+                margin-left: -30px;
+            }
+            .right {
+                margin-left: 10px;
+                .group {
+                    // margin-left: 50px;
+                    .card1 {
+                        // width: 150px;
+                        &:nth-child(1) {
+                            margin-bottom: 0px;
+                        }
+                        &:nth-child(2) {
+                            margin-left: 0px;
+                            margin-bottom: 0px;
+                        }
+                        &:nth-child(4) {
+                            margin-left: 0px;
+                        }
+                    }
+                }
+            }
         }
     }
 }

@@ -254,23 +254,27 @@
     display: grid;
     -ms-grid-columns: auto;
         grid-template-columns: auto;
+    width: 10px;
+    height: 10px;
     margin: 0;
-    width: 100%;
+    padding: 0;
     position: absolute;
+    top: 30px;
+    left: 355px;
     opacity: 0;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    height: 50vh;
     z-index: -1;
     background: #fff;
-    left: 0px;
     font-size: 0.1rem;
-    top: 100%;
-    height: 65vh;
+    border-radius: 100%;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
   }
   .navbar_menu.active {
+    width: 100%;
     margin: 0;
+    left: 0;
     top: 100%;
+    border-radius: 0%;
     opacity: 1;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
@@ -350,6 +354,7 @@
 }
 
 .main__container {
+  z-index: 999;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -547,6 +552,7 @@ hr {
   .main__content {
     text-align: center;
     margin-bottom: 0;
+    margin-top: -50px;
   }
   .main__content h2 {
     font-size: 2.5rem;
@@ -573,6 +579,7 @@ hr {
   }
   .main__img--container {
     margin-left: -50px;
+    margin-top: -120px;
   }
 }
 
@@ -619,7 +626,7 @@ hr {
 
 .s2 .s2_container {
   width: 100%;
-  height: 100vh;
+  height: 626px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -672,16 +679,53 @@ hr {
   color: #1E313B;
 }
 
-.s2 .s2_container .right .card1 .header {
+.s2 .s2_container .right .group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.s2 .s2_container .right .group .card1 .header {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height, or 133% */
   color: #FFC147;
 }
 
-.s2 .s2_container .right .card1 .header img {
+.s2 .s2_container .right .group .card1 .header img {
+  margin-right: 20px;
   width: 24px;
   height: 24px;
 }
 
-@media screen and (max-width: 768px) {
+.s2 .s2_container .right .group .card1 p {
+  margin-top: 5px;
+  margin-left: 45px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  /* or 150% */
+  color: #1E313B;
+}
+
+.s2 .s2_container .right .group .card1:nth-child(1) {
+  margin-bottom: 20px;
+}
+
+.s2 .s2_container .right .group .card1:nth-child(2) {
+  margin-left: 70px;
+  margin-bottom: 20px;
+}
+
+.s2 .s2_container .right .group .card1:nth-child(4) {
+  margin-left: 50px;
+}
+
+@media screen and (max-width: 992px) {
   .s2 .s2_container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -692,6 +736,28 @@ hr {
         -ms-flex-align: center;
             align-items: center;
     justify-self: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .s2 .s2_container {
+    height: 1000px;
+  }
+  .s2 .s2_container .pic {
+    margin-left: -30px;
+  }
+  .s2 .s2_container .right {
+    margin-left: 10px;
+  }
+  .s2 .s2_container .right .group .card1:nth-child(1) {
+    margin-bottom: 0px;
+  }
+  .s2 .s2_container .right .group .card1:nth-child(2) {
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+  .s2 .s2_container .right .group .card1:nth-child(4) {
+    margin-left: 0px;
   }
 }
 /*# sourceMappingURL=style.css.map */
