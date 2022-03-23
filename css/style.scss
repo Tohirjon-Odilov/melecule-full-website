@@ -774,3 +774,106 @@ hr {
         }
     }
 }
+
+// section 4
+.s4 {
+    background: white;
+    .s4-container {
+        width: 100%;
+        height: 592px;
+        display: flex;
+        padding: 80px;
+        .box-1 {
+            margin-top: 90px;
+            .button {
+                width: 91px;
+                height: 24px;
+                background: rgba(121, 78, 255, 0.8);
+                border: 2px solid #794EFF;
+                box-sizing: border-box;
+                border-radius: 100px;
+                cursor: pointer;
+                color: white;
+                &:nth-child(4) {
+                    width: 141px;
+                    height: 42px;
+                    margin-top: 20px;
+                    background: #794EFF;
+                    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.05);
+                    border-radius: 6px;
+                    color: white;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    padding: 0;
+                }
+            }
+            h1 {
+                margin: 20px 0;
+                span {
+                    color: #794EFF;
+                }
+            }
+        }
+        .box-2 {
+            margin-left: 100px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:992px) {
+    .s4 {
+        .s4-container {
+            padding-bottom: 600px;
+            padding-left: 70px;
+            display: flex;
+            flex-wrap: wrap;
+            .box-1 {
+                width: 250px;
+                h1 {
+                    font-size: 30px;
+                }
+                p {
+                    font-size: 10px;
+                }
+            }
+            .box-2 {
+                // margin-left: ;
+                margin: 80px 20px;
+                img {
+                    width: 400px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:480px) {
+    .s4 {
+        .s4-container {
+            padding-bottom: 1050px;
+            margin: 0;
+            .box-1 {
+                width: 270px;
+                margin: 0px -30px;
+                h1 {
+                    font-size: 30px;
+                }
+                p {
+                    font-size: 10px;
+                }
+            }
+            .box-2 {
+                // margin-left: ;
+                margin: 80px -50px;
+                img {
+                    width: 320px;
+                }
+            }
+        }
+    }
+}

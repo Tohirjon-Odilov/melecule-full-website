@@ -871,4 +871,115 @@ hr {
     font-size: 16px;
   }
 }
+
+.s4 {
+  background: white;
+}
+
+.s4 .s4-container {
+  width: 100%;
+  height: 592px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 80px;
+}
+
+.s4 .s4-container .box-1 {
+  margin-top: 90px;
+}
+
+.s4 .s4-container .box-1 .button {
+  width: 91px;
+  height: 24px;
+  background: rgba(121, 78, 255, 0.8);
+  border: 2px solid #794EFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 100px;
+  cursor: pointer;
+  color: white;
+}
+
+.s4 .s4-container .box-1 .button:nth-child(4) {
+  width: 141px;
+  height: 42px;
+  margin-top: 20px;
+  background: #794EFF;
+  -webkit-box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 0;
+}
+
+.s4 .s4-container .box-1 h1 {
+  margin: 20px 0;
+}
+
+.s4 .s4-container .box-1 h1 span {
+  color: #794EFF;
+}
+
+.s4 .s4-container .box-2 {
+  margin-left: 100px;
+}
+
+.s4 .s4-container .box-2 img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .s4 .s4-container {
+    padding-bottom: 600px;
+    padding-left: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .s4 .s4-container .box-1 {
+    width: 250px;
+  }
+  .s4 .s4-container .box-1 h1 {
+    font-size: 30px;
+  }
+  .s4 .s4-container .box-1 p {
+    font-size: 10px;
+  }
+  .s4 .s4-container .box-2 {
+    margin: 80px 20px;
+  }
+  .s4 .s4-container .box-2 img {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .s4 .s4-container {
+    padding-bottom: 1050px;
+    margin: 0;
+  }
+  .s4 .s4-container .box-1 {
+    width: 270px;
+    margin: 0px -30px;
+  }
+  .s4 .s4-container .box-1 h1 {
+    font-size: 30px;
+  }
+  .s4 .s4-container .box-1 p {
+    font-size: 10px;
+  }
+  .s4 .s4-container .box-2 {
+    margin: 80px -50px;
+  }
+  .s4 .s4-container .box-2 img {
+    width: 320px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
