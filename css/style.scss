@@ -751,10 +751,26 @@ hr {
 
 @media screen and (max-width:480px) {
     .s3 {
+        padding-bottom: 750px;
         .s3-container {
-            height: 600px;
-            margin-left: 50px;
+            margin-left: 80px;
             padding-top: 100px;
+            .box-1 {
+                p {
+                    font-size: 25px;
+                }
+            }
+            .box-2 {
+                margin-left: -50px;
+                p {
+                    font-size: 16px;
+                }
+                .row1 {
+                    .num {
+                        // font-size: 30px;
+                    }
+                }
+            }
         }
     }
 }

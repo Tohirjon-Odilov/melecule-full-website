@@ -854,10 +854,21 @@ hr {
 }
 
 @media screen and (max-width: 480px) {
+  .s3 {
+    padding-bottom: 750px;
+  }
   .s3 .s3-container {
-    height: 600px;
-    margin-left: 50px;
+    margin-left: 80px;
     padding-top: 100px;
+  }
+  .s3 .s3-container .box-1 p {
+    font-size: 25px;
+  }
+  .s3 .s3-container .box-2 {
+    margin-left: -50px;
+  }
+  .s3 .s3-container .box-2 p {
+    font-size: 16px;
   }
 }
 /*# sourceMappingURL=style.css.map */
