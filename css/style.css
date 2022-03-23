@@ -736,18 +736,28 @@ hr {
         -ms-flex-align: center;
             align-items: center;
     justify-self: center;
+    padding-bottom: 1080px;
   }
 }
 
 @media screen and (max-width: 480px) {
   .s2 .s2_container {
-    height: 1000px;
+    height: 1100px;
   }
   .s2 .s2_container .pic {
     margin-left: -30px;
   }
   .s2 .s2_container .right {
     margin-left: 10px;
+  }
+  .s2 .s2_container .right h1 {
+    font-size: 20px;
+  }
+  .s2 .s2_container .right p {
+    font-size: 13px;
+  }
+  .s2 .s2_container .right .group {
+    margin-left: 30px;
   }
   .s2 .s2_container .right .group .card1:nth-child(1) {
     margin-bottom: 0px;
@@ -758,6 +768,96 @@ hr {
   }
   .s2 .s2_container .right .group .card1:nth-child(4) {
     margin-left: 0px;
+  }
+}
+
+.s3 {
+  background: #F6F6F6;
+  height: 490px;
+}
+
+.s3 .s3-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 150px;
+  padding-top: 130px;
+}
+
+.s3 .s3-container .box-1 {
+  margin-left: -50px;
+  margin-right: 60px;
+  margin-top: -50px;
+}
+
+.s3 .s3-container .box-1 .button {
+  width: 91px;
+  height: 24px;
+  padding-bottom: -50px;
+  background: rgba(151, 231, 71, 0.6);
+  border: 2px solid #97E747;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 100px;
+}
+
+.s3 .s3-container .box-1 p {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 35px;
+  /* or 110% */
+  color: #1E313B;
+}
+
+.s3 .s3-container .box-1 p span {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 35px;
+  /* identical to box height, or 110% */
+  color: #97E747;
+}
+
+.s3 .s3-container .box-2 p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  /* or 150% */
+  color: #1E313B;
+}
+
+.s3 .s3-container .box-2 .row1 {
+  margin-top: 40px;
+}
+
+.s3 .s3-container .box-2 .row1 .num {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+  /* identical to box height, or 120% */
+  color: #97E747;
+}
+
+@media screen and (max-width: 992px) {
+  .s3 .s3-container {
+    margin-left: 300px;
+    padding-top: 100px;
+  }
+  .s3 .s3-container .box-2 {
+    margin-left: -50px;
+    padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .s3 .s3-container {
+    height: 600px;
+    margin-left: 50px;
+    padding-top: 100px;
   }
 }
 /*# sourceMappingURL=style.css.map */
