@@ -8,3 +8,8 @@ menu.addEventListener('click', function() {
     menuBtn.classList.toggle('active');
     // bg.classList.add("bg")
 })
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    new Splide('#image-slider').mount();
+});

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/splide.min.css">
     <!-- <link rel="stylesheet" href="./fullpage.min.css"> -->
     <!-- <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" /> -->
     <!-- <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'> -->
@@ -205,21 +206,97 @@
         </div>
     </section>
 
-    <!-- section 6 -->
+    <!-- section 7 -->
 
-    <!-- <section class="s6 section">
-        <div class="s6-container">
-
+    <section class="s7 section">
+        <div class="s7-container">
+            <div id="image-slider" class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <img src="./img/ke.png" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="./img/ke.png" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="./img/ke.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </section> -->
+    </section>
 
-    <!-- section 6 -->
 
-    <!-- <section class="s6 section">
-        <div class="s6-container">
+    <!-- section 8 -->
 
+    <section class="s8 section">
+        <div class="s8-container">
+            <div class="box-1">
+                <h3>Don't miss out!</h3>
+                <p>Sign-up & we'll let you know as soon as we have something to show off. <br> (Don't worry, we don't spam).</p>
+            </div>
+            <div class="box-2">
+                <div class="part">
+                    <input type="text" placeholder="Enter your email">
+                    <div class="button button1">Sign up</div>
+                </div>
+                <p>By clicking Sign Up you're confirming that you agree with our <span>Terms and Conditions</span></p>
+            </div>
         </div>
-    </section> -->
+    </section>
+
+    <!--section 9 -->
+
+    <section class="s9 section">
+        <div class="s9-container">
+            <div class="part1">
+                <div class="button button1">Blog</div>
+                <h1>The <span>latest news</span> from Molecule</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="button button2">View all</div>
+            </div>
+            <div class="part2">
+                <div class="x">
+                    <img class="my-3" src="./img/img/IMAGE(4).png" alt="">
+                    <h4>How to drive sales in SaaS</h4>
+                    <p>Vestibulum sit amet urna turpis. Mauris euismod elit et <br> nisi ultrices, ut faucibus orci tincidunt.</p>
+                    <div class="foter">
+                        <img src="./img/img/IMAGE-1(5).png" alt="">
+                        <div>
+                            <p>Dwight Schrute</p>
+                            <p>January 25, 2022   28 min read</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="x">
+                    <img class="my-3" src="./img/img/IMAGE(5).png" alt="">
+                    <h4>How to drive sales in SaaS</h4>
+                    <p>Vestibulum sit amet urna turpis. Mauris euismod elit et <br> nisi ultrices, ut faucibus orci tincidunt.</p>
+                    <div class="foter">
+                        <img src="./img/img/IMAGE-1(6).png" alt="">
+                        <div>
+                            <p>Dwight Schrute</p>
+                            <p>January 25, 2022   28 min read</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="x">
+                    <img class="my-3" src="./img/img/IMAGE(6).png" alt="">
+                    <h4>How to drive sales in SaaS</h4>
+                    <p>Vestibulum sit amet urna turpis. Mauris euismod elit et <br> nisi ultrices, ut faucibus orci tincidunt.</p>
+                    <div class="foter">
+                        <img src="./img/img/IMAGE-1(7).png" alt="">
+                        <div>
+                            <p>Dwight Schrute</p>
+                            <p>January 25, 2022   28 min read</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- section 6 -->
 
@@ -255,9 +332,13 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script> -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script> -->
     <!-- <script src="./fullpage.min.js"></script> -->
+    <script src="./js/splide.min.js"></script>
     <script src="./js/bootstrap.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="script.js"></script>
+    <script>
+        new Splide('#image-slider').mount();
+    </script>
 </body>
 
 </html>
